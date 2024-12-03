@@ -1,18 +1,188 @@
-body{   
-    
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
+/* Estilos generales */
+.parrafo{
+    text-align: justify;
+    padding: 1% 5%;
+}
+
+.text-align-center{
     text-align: center;
 }
 
-main{
+.text-gramar {
+    text-decoration-line: grammar-error;
+}
+
+/**{
     align-items: center;
-    min-height: 80vh;
-    font-size: 3rem;
-    padding: 10px;
+}*/
+
+/* Sección para el Index */ 
+body{
+    background-color:rgb(136, 235, 235);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.text{
+    padding: 80px 0px 30px 0px;
+}
+
+.main{
+    align-items: center;
     display: grid;
+    font-size: 3rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 5px
+    gap: 10px;
+    min-height: 40vh;
+    padding: 10px;
+}
+
+#dos {
+    align-items: center;
+    display: grid;
+    background-color: #2196F3;
+    grid-template-areas: 
+        "h h h"
+        "m m a"
+        "n n b"
+        "n n b"
+        "j j j"
+    ;
+    height: 200px;
+}
+
+.grid-7 {
+    grid-area: myArea;
+  }
+
+.grid-7{
+    grid-area: h;
+}
+
+.grid-8{
+    grid-area: m;
+}
+
+.grid-9{
+    grid-area: a;
+}
+
+.grid-10{
+    grid-area: n;
+}
+
+.grid-11{
+    grid-area: b;
+}
+
+.grid-12{
+    grid-area: j;
+}
+
+/* Sección para el Index */ 
+#contenedor_index{
+    display: grid;
+    grid-template-areas: 
+        "h1 h1 h1 h1"
+        "a1 a1 a1 a1"
+        "f1 f1 f2 f2"
+    ;
+    height: 100vh;
+}
+
+.h1{
+    grid-area: h1;
+}
+
+.a1{
+    grid-area: a1;
+}
+
+.f1{
+    grid-area: f1;
+    background-color: royalblue;
+    color: white;
+}
+
+.f2{
+    grid-area: f2;
+    background-color: springgreen;
+}
+
+#menu{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header {
+    background-color: salmon;
+}
+
+.article {
+    background-color: sandybrown;
+}
+
+/* Parte de la sección de la página */
+
+#contenedor_contacto{
+    display: grid;
+    grid-template-areas: 
+        "sec1 sec1 sec1 sec1"
+        "ar1 ar1 as1 as2"
+        "fo1 fo1 fo1 fo1"
+    ;
+    height: 100vh;
+}
+
+.section{    
+    background-color: seagreen;
+    color: white;
+    padding: 80px 30px 60px 30px;
+}
+
+.sec1 {
+    grid-area: sec1;
+}
+
+.ar1 {
+    grid-area: ar1;
+    background-color: sienna;
+    color: white;
+    padding: 30px 0px;
+}
+
+.as1 {
+    grid-area: as1;
+    background-color: slateblue;
+    color: white;
+    padding: 30px 0px;
+}
+
+.as2 { 
+    grid-area: as2;
+    background-color:crimson;
+    color: white;
+    padding: 30px 0px;
+}
+
+.fo1 {
+    grid-area: fo1;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    
 }
